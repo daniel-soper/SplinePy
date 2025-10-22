@@ -5,7 +5,7 @@ from scipy.stats import norm
 import os
 
 # --- Load the pre-trained spline models and metadata upon module import ---
-MODELS_PATH = 'splines/t/models_t_cdf.pkl.gz'
+MODELS_PATH = 'spline_models/models_t_cdf.pkl.gz'
 try:
     with gzip.open(MODELS_PATH, 'rb') as f:
         _model_data = pickle.load(f)
