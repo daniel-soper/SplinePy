@@ -4,7 +4,7 @@ from scipy.interpolate import splev
 
 # --- Load the pre-trained spline model upon module import ---
 
-MODEL_PATH = 'splines/normal/model_standard_normal_cdf.pkl.gz'
+MODEL_PATH = 'spline_models/model_standard_normal_cdf.pkl.gz'
 
 try:
     with gzip.open(MODEL_PATH, 'rb') as f:
