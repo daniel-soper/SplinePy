@@ -4,7 +4,7 @@ from scipy.interpolate import splev
 from spline_normal_cdf import normal_cdf
 
 # --- Load the pre-trained spline models and metadata upon module import ---
-MODELS_PATH = 'splines/chi2/models_chi2_cdf.pkl.gz'
+MODELS_PATH = 'spline_models/models_chi2_cdf.pkl.gz'
 try:
     with gzip.open(MODELS_PATH, 'rb') as f:
         _model_data = pickle.load(f)
